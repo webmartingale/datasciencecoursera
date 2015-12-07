@@ -4,7 +4,7 @@ rankall <- function(outcome, num = "best") {
     data <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
 
     ## Check that state and outcome are valid
-    if (sum(data$State == state) == 0) stop("invalid state")
+    #if (sum(data$State == state) == 0) stop("invalid state")
     #also get column index in data for outcome name
     outcomeIndex <- if (outcome == "heart attack"){
         11
